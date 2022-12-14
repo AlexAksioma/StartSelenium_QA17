@@ -68,7 +68,7 @@ public class Webinar1 {
         System.out.println("++++++++++ "+elementsCol.size());
 
         //WebElement elementsCol123 = wd.findElement(By.cssSelector("tr:nth-child(3)"));
-        WebElement elementsCol123 = wd.findElement(By.xpath("//tr[3]"));
+        WebElement elementsCol123 = wd.findElement(By.xpath("//tr[last()]"));
         System.out.println(elementsCol123.getText());
 
     }

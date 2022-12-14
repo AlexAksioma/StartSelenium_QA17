@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestTicketService" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-29T12:51:17" hostname="LAPTOP-LL83AM04" time="0.378">
+  <properties/>
+  <testcase name="testTicketServiceLogin" classname="TestTicketService" time="0.378"/>
+  <system-out><![CDATA[input
+form-control
+(278, 214)
+true
+true
+false
+===================================
+Login
+Register
+Login with invitation code
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 16498
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 29, 2022 2:51:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

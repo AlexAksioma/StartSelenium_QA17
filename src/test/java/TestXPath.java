@@ -24,11 +24,15 @@ public class TestXPath {
     public void testName(){
 
         WebElement element = wd.findElement(By.tagName("a"));
+        WebElement element5 = wd.findElement(By.cssSelector("a"));
         wd.findElement(By.xpath("//a"));
 
         wd.findElement(By.id("root"));
         wd.findElement(By.cssSelector("#root"));
-        wd.findElement(By.xpath("//*[@id='root']"));
+        WebElement element1 = wd.findElement(By.xpath("//div[@id='root']"));
+        WebElement element2 = wd.findElement(By.xpath("//*[@id='root']"));
+        System.out.println("=========  "+element1.getText());
+        System.out.println("=========  "+element2.getText());
 
         wd.findElement(By.cssSelector("[href='/login']"));
         wd.findElement(By.xpath("//*[@href='/login']"));
@@ -40,7 +44,7 @@ public class TestXPath {
         wd.findElement(By.cssSelector("[href*='og']"));
         wd.findElement(By.xpath("//*[contains(@href,'/lo')]"));
 
-        wd.findElement(By.linkText("HOME")); //поиск по содержимому тега
+        wd.findElement(By.linkText("HOME")); //tegs <>HOME</>
         wd.findElement(By.xpath("//*[text()='HOME']"));
         wd.findElement(By.xpath("//*[.='HOME']"));
 
